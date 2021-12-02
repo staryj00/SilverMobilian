@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context=".Main.JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/myInformation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.11"
+            android:background="#1E3269"
+            android:fontFamily="@font/nanumbold"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="내 정보"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.89"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="아이디"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="패스워드"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtPw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="패스워드확인"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtPw2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtmyName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="이름"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtmyName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myTel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="전화번호"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtmyTel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="주소"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtmyAdr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.14"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/myMemo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="기타 메모\n(질병, 복용 약 등)"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtMemo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/proInformation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.25"
+            android:background="#1E3269"
+            android:fontFamily="@font/nanumbold"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="보호자 정보"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/proName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="이름"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtproName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/proTel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/nanumbold"
+                    android:gravity="center"
+                    android:text="전화번호"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/edtproTel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/round"
+                    android:fontFamily="@font/nanumbold"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/nanumbold"
+            android:text="이전으로"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/round"
+            android:text="가입하기"
+            android:textSize="24sp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nanumbold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="#FFFFFF"
+    tools:context=".Main.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.17"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtId"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="아이디"
+                            android:fontFamily="@font/nanumbold"
+                            android:inputType="textPersonName" />
+
+                        <EditText
+                            android:id="@+id/edtPw"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="패스워드"
+                            android:fontFamily="@font/nanumbold"
+                            android:inputType="textPassword" />
+
+                        <CheckBox
+                            android:id="@+id/chkAuto"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:fontFamily="@font/nanumbold"
+                            android:text="자동로그인" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnLogin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_td"
+                            android:text="로그인"
+                            android:fontFamily="@font/nanumbold"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/btnJoin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_td"
+                            android:text="회원가입"
+                            android:fontFamily="@font/nanumbold"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:fontFamily="@font/nanumbold"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/txtHi"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="님 안녕하세요."
+                        android:fontFamily="@font/nanumbold"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sosView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSOS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/sos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.17"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/button_bg"
+                    android:drawableLeft="@drawable/btn_call"
+                    android:paddingLeft="30dp"
+                    android:text="전화"
+                    android:fontFamily="@font/nanumbold"
+                    android:textSize="28sp" />
+
+                <Button
+                    android:id="@+id/btnMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/button_bg"
+                    android:drawableLeft="@drawable/btn_msg"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:text="문자"
+                    android:fontFamily="@font/nanumbold"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/guidView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:gravity="center|right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    app:srcCompat="@drawable/user" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="315dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/nanumbold"
+        android:src="@drawable/gd_sos"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="245dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/nanumbold"
+        android:src="@drawable/mypage"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="175dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/nanumbold"
+        android:src="@drawable/gd_msg"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="105dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:fontFamily="@font/nanumbold"
+        android:src="@drawable/gd_call"
+        android:visibility="invisible"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:pressedTranslationZ="15dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="#1E3269"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_guide"
+        android:fontFamily="@font/nanumbold"/>
+
+
+</FrameLayout>

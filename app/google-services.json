@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057597629158",
+    "firebase_url": "https://pbl-silvermobilian.firebaseio.com",
+    "project_id": "pbl-silvermobilian",
+    "storage_bucket": "pbl-silvermobilian.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057597629158:android:4ccce7f6518782c2",
+        "android_client_info": {
+          "package_name": "com.pbl.silvermobilian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057597629158-gqcbe61041v34s4nnlld5heg0d3ca683.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pbl.silvermobilian",
+            "certificate_hash": "010f8a75112bbd98d5d081a0e2493bd530e6fea3"
+          }
+        },
+        {
+          "client_id": "1057597629158-f2u6qdn32g5jtstbodl5c6ffuqflo3jg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN9sQpA65DQ3i3qv-FATCNqwJTi46DRfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057597629158-f2u6qdn32g5jtstbodl5c6ffuqflo3jg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

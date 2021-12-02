@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".Message.ChatActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/nanumbold"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.35"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="30sp"
+        android:text="TextView"/>
+
+    <ListView
+        android:id="@+id/lstChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtWrite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/nanumbold"
+            android:hint="내용을 입력하세요"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/nanumbold"
+            android:text="전송"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

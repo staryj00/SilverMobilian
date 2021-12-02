@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    design_fab_size_normal : 버튼 크기
+    design_fab_image_size : 버튼 내 이미지 크기
+    -->
+    <dimen name="design_fab_size_normal" tools:override="true">70dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">70dp</dimen>
+</resources>
